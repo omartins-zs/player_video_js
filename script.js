@@ -43,3 +43,10 @@ function setVideo(video_main, item) {
 }
 
 loadVideos();
+
+const toggleButton = document.getElementById('theme-toggle');
+const body = document.getElementsByTagName('body')[0];
+
+toggleButton.addEventListener('click', () => {
+  body.classList.toggle('dark');
+});
