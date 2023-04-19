@@ -60,3 +60,12 @@ body {
     margin-right: 5px;
     cursor: pointer;
 }
+
+.active {
+    background-color: #3f3ff6;
+    color: white;
+}
+
+.playlist-video video {
+    width: 100px;
+}
