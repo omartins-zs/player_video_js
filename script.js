@@ -18,3 +18,21 @@ function loadVideos() {
 
   addOnClick();
 }
+
+function addOnClick() {
+  const video_main = document.querySelector(".main-video-content");
+  const playlist_video = document.querySelectorAll(".playlist-video");
+
+  playlist_video.forEach((item, i) => {
+    if (!i) {
+      setVideo(video_main, item);
+    }
+
+    item.onclick = () => {
+      playlist_video.forEach((video) => video.classList.remove("active"));
+      item.classList.add("active");
+
+      setVideo(video_main, item);
+    };
+  });
+}
