@@ -44,9 +44,13 @@ function setVideo(video_main, item) {
 
 loadVideos();
 
-const toggleButton = document.getElementById('theme-toggle');
-const body = document.getElementsByTagName('body')[0];
+const toggleSwitch = document.getElementById('theme-toggle');
+const body = document.body;
 
-toggleButton.addEventListener('click', () => {
-  body.classList.toggle('dark');
+toggleSwitch.addEventListener('change', function (event) {
+  if (event.target.checked) {
+    body.classList.add('dark-mode');
+  } else {
+    body.classList.remove('dark-mode');
+  }
 });
