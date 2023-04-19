@@ -36,3 +36,10 @@ function addOnClick() {
     };
   });
 }
+
+function setVideo(video_main, item) {
+  video_main.children[0].src = item.children[0].getAttribute("src");
+  video_main.children[1].innerHTML = item.children[1].innerHTML;
+}
+
+loadVideos();
