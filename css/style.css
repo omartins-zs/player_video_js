@@ -5,3 +5,18 @@
     font-family: 'poppins', sans-serif;
     border-radius: 5px;
 }
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    gap: 15px;
+    margin: 20px 10px;
+    background-color: white;
+    padding: 10px;
+}
