@@ -42,3 +42,21 @@ body {
     padding: 2px;
 }
 
+.playlist::-webkit-scrollbar {
+    width: 6px;
+}
+
+.playlist::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: gray;
+}
+
+.playlist-video {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    box-shadow: 0 1px 2px gray;
+    margin-right: 5px;
+    cursor: pointer;
+}
